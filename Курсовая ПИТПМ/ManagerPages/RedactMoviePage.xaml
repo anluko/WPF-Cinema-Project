@@ -1,0 +1,72 @@
+﻿<Window x:Class="Курсовая_ПИТПМ.ManagerPages.RedactMoviePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курсовая_ПИТПМ.ManagerPages"
+        mc:Ignorable="d"
+        Title="RedactMoviePage" Height="583.2" Width="978.982">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="206.4"/>
+            <ColumnDefinition Width="321*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="239*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.RowSpan="2" Background="#2a2b2e" Grid.ColumnSpan="2"/>
+        <Grid Grid.Column="0" Grid.RowSpan="2" Background="#4f5052"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Height="40" Grid.Row="0" Grid.Column="0">CineMovie</TextBlock>
+        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="0,2,0.4,-0.4" Grid.Row="1">
+            <Button Style="{StaticResource Flat}" Margin="0 10 0 0" Name="AddMoviePageBTN" Click="AddMoviePageBTN_Click" FontSize="20" Height="50">
+                <TextBlock Text="Новый фильм     " Foreground="#878787"/>
+            </Button>
+            <Button Style="{StaticResource Flat}" Margin="0 10 0 0" Name="RedactMoviePageBTN" Click="RedactMoviePageBTN_Click" FontSize="20" Height="50">
+                <TextBlock Text="Изменить фильм" Foreground="#878787"/>
+            </Button>
+        </StackPanel>
+        <Button Style="{StaticResource Flat}" Name ="BackPageBTN" Click="BackPageBTN_Click" Grid.Column="0" Grid.Row="1" VerticalAlignment="Bottom" FontSize="20" Height="50">
+            <TextBlock Text=" Вернуться назад" Foreground="#878787"/>
+        </Button>
+
+        <TextBlock Grid.Row="0" Grid.Column="1" FontSize="28" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2">Редактирование фильмов</TextBlock>
+
+        <ListView Grid.Row="1" Grid.Column="1" x:Name="MoviesLV" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="#2a2b2e" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Background="#2a2b2e" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="14*"/>
+                            <RowDefinition Height="58*"/>
+                            <RowDefinition Height="19*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="13*"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Stretch="Fill" Margin="10 0 0 10">
+                            <Image.Source>
+                                <Binding Path="Preview">
+                                    <Binding.TargetNullValue>
+                                        <ImageSource>picture.png</ImageSource>
+                                    </Binding.TargetNullValue>
+                                </Binding>
+                            </Image.Source>
+                        </Image>
+                        <TextBlock Text ="{Binding MovieName}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="26" Margin="20 10 0 0"/>
+                        <TextBlock Text ="{Binding MovieCategory, StringFormat=Жанр: \{0\}}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="20 0 0 0"/>
+                        <TextBlock Text ="{Binding MovieCountry, StringFormat=Страна: \{0\}}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" Margin="20 0 0 0"/>
+                        <TextBlock Text ="{Binding ReleaseDate, StringFormat=Дата: \{0\}}" Width="2300" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="18" Margin="20 0 0 0"/>
+                        <Button Style="{StaticResource NoAngles}" Width="170" Height="30" x:Name="RedactMovieBTN" Content="Изменить" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Click="RedactMovieBTN_Click"/>
+                        <Button Style="{StaticResource NoAngles}" Width="170" Height="30" x:Name="DeleteMovieBTN" Content="Удалить" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top"  FontSize="20" Click="DeleteMovieBTN_Click"/>
+                        <TextBlock Text ="{Binding PeopleCount}" Name="ClientCountTB" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="18" Margin="20 0 0 10"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

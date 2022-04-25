@@ -1,0 +1,69 @@
+﻿<Window x:Class="Курсовая_ПИТПМ.ClientPages.PersonalPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курсовая_ПИТПМ.ClientPages"
+        mc:Ignorable="d"
+        Title="PersonalPage" Height="583.2" Width="978.982">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="206.4"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="424*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.RowSpan="3" Background="#2a2b2e" Margin="203,0,-0.2,-0.4" Grid.ColumnSpan="2"/>
+        <Grid Grid.Column="0" Grid.RowSpan="3" Background="#4f5052" Margin="0,0,0.4,-0.4"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Height="40" Grid.Row="0" Grid.Column="0">CineMovie</TextBlock>
+        <StackPanel Grid.Column="0" Orientation="Vertical" Grid.Row="1" Grid.RowSpan="2">
+            <Button Style="{StaticResource Flat}" Margin="0 10 0 0" Name="PosterPageBTN" Click="PosterPageBTN_Click" FontSize="20" Height="50" >
+                <TextBlock Text="Афиша             " Foreground="#878787"></TextBlock>
+            </Button>
+            <Button Style="{StaticResource Flat}" Name ="PersonalPageBTN" Click="PersonalPageBTN_Click" FontSize="20" Height="50" >
+                <TextBlock Text=" Личный кабинет" Foreground="#878787"></TextBlock>
+            </Button>
+            <Button Style="{StaticResource Flat}" Name ="SubscriprionPageBTN" Click="SubscriprionPageBTN_Click" FontSize="20" Height="50">
+                <TextBlock Text="Подписка         " Foreground="#878787"></TextBlock>
+            </Button>
+        </StackPanel>
+        <Button Style="{StaticResource Flat}" Name ="BackPageBTN" Click="BackPageBTN_Click" Grid.Column="0" Grid.Row="2" VerticalAlignment="Bottom" FontSize="20" Height="50">
+            <TextBlock Text=" Вернуться назад" Foreground="#878787"></TextBlock>
+        </Button>
+
+        <TextBlock x:Name="WelcomeLabel" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26"></TextBlock>
+
+        <Button Style="{StaticResource Flat}" Grid.Row="1" Grid.Column="1" FontSize="22" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30 0 0 0" Name="PersonalDataBTN" Click="PersonalDataBTN_Click">Личные данные</Button>
+        <Button Style="{StaticResource Flat}" Grid.Row="1" Grid.Column="1" FontSize="22" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 0" Name="PutOnBalanceBTN" Click="PutOnBalanceBTN_Click">Положить на счёт</Button>
+        <Button Style="{StaticResource Flat}" Grid.Row="1" Grid.Column="1" FontSize="22" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 30 0" Name="TakeFromBalanceBTN" Click="TakeFromBalanceBTN_Click">Снять со счёта</Button>
+
+        <WrapPanel Name="PersonalDataWP" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" Visibility="Hidden">
+            <TextBlock FontSize="20" Margin="0 0 0 0">Здесь вы можете изменить свои личные данные</TextBlock>
+            <TextBlock FontSize="16" Margin="59 20 0 0">Логин</TextBlock>
+            <TextBox Style="{StaticResource NoAnglesTB}" FontSize="18" Margin="0 10 0 0" Width="330" Name="LoginTB"></TextBox>
+            <TextBlock FontSize="16" Margin="59 20 0 0">Пароль</TextBlock>
+            <TextBox Style="{StaticResource NoAnglesTB}" FontSize="18" Margin="0 10 0 0" Width="330" Name ="PasswordTB"></TextBox>
+            <TextBlock FontSize="16" Margin="59 20 0 0">Полное имя</TextBlock>
+            <TextBox Style="{StaticResource NoAnglesTB}" FontSize="18" Margin="0 10 0 0" Width="330" Name="NameTB"></TextBox>
+            <TextBlock FontSize="16" Margin="59 20 0 0">Почта</TextBlock>
+            <TextBox Style="{StaticResource NoAnglesTB}" FontSize="18" Margin="0 10 0 0" Width="330" Name="EmailTB"></TextBox>
+            <Button Style="{StaticResource NoAngles}" Content="Сохранить" FontSize="22" Width="330" Margin="0 30 0 0" Name="ApplyChangesBTN" Click="ApplyChangesBTN_Click"></Button>
+        </WrapPanel>
+        <WrapPanel Visibility="Hidden" Name="PutBalanceWP" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <TextBlock Name="PutBalanceLabel" TextAlignment="Center" FontSize="20" Margin="0 0 0 80"></TextBlock>
+            <TextBlock FontSize="18" TextWrapping="Wrap" TextAlignment="Center" Margin="0 0 0 0">Введите сумму, которую хотите <LineBreak/> положить на свой счёт.</TextBlock>
+            <TextBox Style="{StaticResource NoAnglesTB}" FontSize="20" Width="330" Name="PutBalanceTB" Margin="0 40 0 0"></TextBox>
+            <Button Style="{StaticResource NoAngles}" FontSize="22" Content="Положить" Margin="0 50 0 0" Name="PutBalanceBTN" Click="PutBalanceBTN_Click"></Button>
+        </WrapPanel>
+        <WrapPanel Visibility="Hidden" Name="TakeBalanceWP" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <TextBlock Name="TakeBalanceLabel" TextAlignment="Center" FontSize="20" Margin="0 0 0 80"></TextBlock>
+            <TextBlock Foreground="White" FontSize="18" TextWrapping="Wrap" TextAlignment="Center" Margin="0 0 0 0">Введите сумму, которую вы хотите <LineBreak/> снять со счёта.</TextBlock>
+            <TextBox Style="{StaticResource NoAnglesTB}" FontSize="20" Width="330" Name="TakeBalanceTB" Margin="0 40 0 0"></TextBox>
+            <Button Style="{StaticResource NoAngles}" FontSize="22" Content="Снять" Margin="0 50 0 0" Name="TakeBalanceBTN" Click="TakeBalanceBTN_Click"></Button>
+        </WrapPanel>
+    </Grid>
+</Window>

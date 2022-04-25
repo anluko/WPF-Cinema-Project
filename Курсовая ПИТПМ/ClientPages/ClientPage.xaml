@@ -1,0 +1,86 @@
+﻿<Window x:Class="Курсовая_ПИТПМ.ClientPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курсовая_ПИТПМ"
+        mc:Ignorable="d"
+        Title="ClientPage" Height="583.2" Width="978.982">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="206.4"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="424*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.RowSpan="3" Background="#2a2b2e" Margin="203,0,-0.2,-0.4" Grid.ColumnSpan="2"/>
+        <Grid Grid.Column="0" Grid.RowSpan="3" Background="#4f5052" Margin="0,0,0.4,-0.4"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Foreground="White" Height="40" Grid.Row="0" Grid.Column="0">CineMovie</TextBlock>
+        <StackPanel Grid.Column="0" Orientation="Vertical" Grid.Row="1" Grid.RowSpan="2">
+            <Button Style="{StaticResource Flat}" Name="PosterPageBTN" Click="PosterPageBTN_Click" FontSize="20" Height="50" Margin="0 10 0 0" >
+                <TextBlock Text="Афиша             " Foreground="#878787"></TextBlock>
+            </Button>
+            <Button Style="{StaticResource Flat}" Name ="PersonalPageBTN" Click="PersonalPageBTN_Click" FontSize="20" Height="50">
+                <TextBlock Text=" Личный кабинет" Foreground="#878787"></TextBlock>
+            </Button>
+            <Button Style="{StaticResource Flat}" Name ="SubscriprionPageBTN" Click="SubscriprionPageBTN_Click" FontSize="20" Height="50">
+                <TextBlock Text="Подписка         " Foreground="#878787"></TextBlock>
+            </Button>
+        </StackPanel>
+        <Button Style="{StaticResource Flat}" Cursor="Hand" Name ="BackPageBTN" Click ="BackPageBTN_Click" Grid.Column="0" Grid.Row="2" VerticalAlignment="Bottom" FontSize="20" Height="50">
+            <TextBlock Text=" Вернуться назад" Foreground="#878787"></TextBlock>
+        </Button>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Style="{StaticResource Flat}" Content="Все" Foreground="White" FontSize="26" Margin="0 0 120 0" Name="AllPosterBTN" Click="AllPosterBTN_Click"/>
+            <Button Style="{StaticResource Flat}" Content="Фильмы" Foreground="White" FontSize="26" Margin="0 0 120 0" Name="MoviesBTN" Click="MoviesBTN_Click"/>
+            <Button Style="{StaticResource Flat}" Content="Сериалы" Foreground="White" FontSize="26" Margin="0 0 120 0" Name="SerialsBTN" Click="SerialsBTN_Click"/>
+            <Button Style="{StaticResource Flat}" Content="Аниме" Foreground="White" FontSize="26" Name="AnimesBTN" Click="AnimesBTN_Click"/>
+        </StackPanel>
+
+        <StackPanel x:Name="LeftSP" Grid.Row="1" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" >
+            <ComboBox Style="{StaticResource ComboboxStyle}" x:Name="CategoriesCB" Background="#4f5052" Margin="10 0 10 0" Width="190" FontSize="20" Height="30" SelectionChanged="CategoriesCB_SelectionChanged">
+                <ComboBoxItem Content="Все жанры"/>
+            </ComboBox>
+            <ComboBox Style="{StaticResource ComboboxStyle}" x:Name="CountriesCB" Background="#4f5052" Width="190" FontSize="20" Height="30" Margin="0 0 0 0" SelectionChanged="CountriesCB_SelectionChanged">
+                <ComboBoxItem Content="Все страны"/>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel x:Name="RightSP" Grid.Row="1" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+            <Button Style="{StaticResource Flat}" x:Name="NewestSortBTN" Content="По новизне" FontSize="20" Foreground="White" Margin="145 0 30 0" Click="NewestSortBTN_Click" />
+            <Button Style="{StaticResource Flat}" x:Name="RatingSortBTN" Content="По рейтингу" FontSize="20" Foreground="White" Margin="0 0 30 0" Click="RatingSortBTN_Click"/>
+        </StackPanel>
+
+        <ListView Grid.Row="2" Grid.Column="1" x:Name="MoviesLV" Cursor="Hand" ScrollViewer.HorizontalScrollBarVisibility="Disabled" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" Background="#2a2b2e" Margin="0,0,0.4,0.2" SelectionChanged="MoviesLV_SelectionChanged">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate x:Name="MyDataTemplate">
+                    <Grid Background="#2a2b2e" Margin="20" Width="380" x:Name="LVGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="250"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <Image Width="380" Grid.Row="0" Stretch="Fill" HorizontalAlignment="Center" Margin="5" x:Name="MovieImage">
+                            <Image.Source>
+                                <Binding Path="PosterPreview"></Binding>
+                            </Image.Source>
+                        </Image>
+                        <TextBlock Text ="{Binding MovieName}" VerticalAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Left" FontSize="26" Grid.Row="1"/>
+                        <TextBlock Text ="{Binding MovieCategory}" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="18"/>
+                        <TextBlock Text ="{Binding ReleaseDate}" Grid.Row="2" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

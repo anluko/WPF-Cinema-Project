@@ -1,0 +1,77 @@
+﻿<Window x:Class="Курсовая_ПИТПМ.ClientPages.MoviePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курсовая_ПИТПМ.ClientPages"
+        mc:Ignorable="d"
+        Title="MoviePage" Height="583.2" Width="978.982">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="206.4"/>
+            <ColumnDefinition Width="242*"/>
+            <ColumnDefinition Width="525*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="295*"/>
+            <RowDefinition Height="210*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.RowSpan="3" Background="#2a2b2e" Margin="203,0,-0.2,-1.4" Grid.ColumnSpan="3"/>
+        <Grid Grid.Column="0" Grid.RowSpan="3" Background="#4f5052" Margin="0,0,0.4,-1.4"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Grid.Row="0" Grid.Column="0">CineMovie</TextBlock>
+        <StackPanel Grid.Column="0" Orientation="Vertical" Grid.RowSpan="2" Margin="0,0,0.4,-0.4" Grid.Row="1">
+            <Button Style="{StaticResource Flat}" Margin="0 10 0 0" Name="PosterPageBTN" Click="PosterPageBTN_Click" FontSize="20" Height="50">
+                <TextBlock Text="Афиша             " Foreground="#878787"></TextBlock>
+            </Button>
+            <Button Style="{StaticResource Flat}" Name ="PersonalPageBTN" Click="PersonalPageBTN_Click" FontSize="20" Height="50">
+                <TextBlock Text=" Личный кабинет" Foreground="#878787"></TextBlock>
+            </Button>
+            <Button Style="{StaticResource Flat}" Name ="SubscriprionPageBTN" Click="SubscriprionPageBTN_Click" FontSize="20" Height="50">
+                <TextBlock Text="Подписка         " Foreground="#878787"></TextBlock>
+            </Button>
+        </StackPanel>
+        <Button Style="{StaticResource Flat}" Name ="BackPageBTN" Click="BackPageBTN_Click" Grid.Column="0" Grid.Row="2" VerticalAlignment="Bottom" FontSize="20" Height="50">
+            <TextBlock Text=" Вернуться назад" Foreground="#878787"></TextBlock>
+        </Button>
+
+        <TextBlock FontWeight="Bold" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Name="MovieNameTB" FontSize="34" HorizontalAlignment="Center" VerticalAlignment="Center">img</TextBlock>
+        <Image Name="MovieImage" Grid.Row="1" Grid.Column="1" Stretch="Fill" Margin="40 0 0 30"/>
+        <TextBlock Name="PriceTB" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="28" Foreground="#ff6600"></TextBlock>
+
+        <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="40 0 0 0">
+            <TextBlock  FontWeight="Bold" FontSize="22" Margin="0 0 0 0">О фильме</TextBlock>
+            <TextBlock  Foreground="#c2bebe" FontSize="18" Margin="0 10 0 0">Жанр:         
+                <TextBlock  FontSize="18" Name="CategoryTB"></TextBlock></TextBlock>
+            <TextBlock  Foreground="#c2bebe" FontSize="18" Margin="0 10 0 0">Страна: 
+                <TextBlock FontSize="18" Name="CountryTB"></TextBlock></TextBlock>
+            <TextBlock  Foreground="#c2bebe" FontSize="18" Margin="0 10 0 0">Дата выхода:         
+                <TextBlock FontSize="18" Name="DateTB"></TextBlock></TextBlock>
+            <TextBlock  Foreground="#c2bebe" FontSize="18" Margin="0 10 0 0">Режисёр: 
+                <TextBlock FontSize="18" Name="ProducerTB"></TextBlock></TextBlock>
+            <TextBlock  FontWeight="Bold" Foreground="White" FontSize="22" Margin="0 15 0 0">Описание</TextBlock>
+            <TextBlock FontSize="18" Name="DescriptionTB" Margin="0 10 40 10" TextAlignment="Center" TextWrapping="WrapWithOverflow"/>
+            <Button Style="{StaticResource NoAngles}" Width="400" Height="35" x:Name="StartWatchBTN" Click="StartWatchBTN_Click" Content="Начать просмотр" Margin="0 30 0 0" FontSize="22" Visibility="Hidden"></Button>
+            <Button Style="{StaticResource NoAngles}" Width="400" Height="35" x:Name="BuyTicketBTN" Click="BuyTicketBTN_Click" Content="Купить и смотреть" Margin="0 30 0 0" FontSize="22" Visibility="Hidden"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <TextBlock   FontWeight="Bold" FontSize="22" Margin="40 20 0 0">Оценка фильма</TextBlock>
+            <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="0 20 0 0">
+                <TextBlock Width="50" Height="50" Margin="0 0 50 0" Name="FirstRate" MouseDown="FirstRate_MouseDown"></TextBlock>
+                <TextBlock Width="50" Height="50" Margin="0 0 50 0" Name="SecondRate" MouseDown="SecondRate_MouseDown"></TextBlock>
+                <TextBlock Width="50" Height="50" Margin="0 0 50 0" Name="ThirdRate" MouseDown="ThirdRate_MouseDown"></TextBlock>
+                <TextBlock Width="50" Height="50" Margin="0 0 50 0" Name="FourthRate" MouseDown="FourthRate_MouseDown"></TextBlock>
+                <TextBlock Width="50" Height="50" Margin="0 0 50 0" Name="FifthRate" MouseDown="FifthRate_MouseDown"></TextBlock>
+                <TextBlock Width="50" Height="50" Margin="0 0 50 0" Name="SixthRate" MouseDown="SixthRate_MouseDown"></TextBlock>
+                <TextBlock Width="50" Height="50" Margin="0 0 50 0" Name="SeventhRate" MouseDown="SeventhRate_MouseDown"></TextBlock>
+                <TextBlock Width="50" Height="50" Margin="0 0 50 0" Name="EighthRate" MouseDown="EighthRate_MouseDown"></TextBlock>
+                <TextBlock Width="50" Height="50" Margin="0 0 50 0" Name="NinethRate" MouseDown="NinethRate_MouseDown"></TextBlock>
+                <TextBlock Width="50" Height="50" Margin="0 0 50 0" Name="TenthRate" MouseDown="TenthRate_MouseDown"></TextBlock>
+            </StackPanel>
+            <Button Style="{StaticResource NoAngles}" Width="250" Height="35" Name="RateBTN" Content="Оценить" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 20 0 0" Click="RateBTN_Click"></Button>
+            <TextBlock FontWeight="Bold" FontSize="22" Margin="40 20 0 0">Отзыв о фильме</TextBlock>
+            <TextBox Background="#4f5052" FontSize="18" Name="ReviewTB" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="40 20 40 0" Height="54" KeyDown="ReviewTB_KeyDown"></TextBox>
+        </StackPanel>
+    </Grid>
+</Window>

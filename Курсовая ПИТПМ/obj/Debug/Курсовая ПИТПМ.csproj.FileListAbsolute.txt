@@ -1,0 +1,78 @@
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\Курсовая ПИТПМ.exe.config
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\Курсовая ПИТПМ.exe
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\Курсовая ПИТПМ.pdb
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\EntityFramework.dll
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\EntityFramework.xml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\AdminPages\AdminPage.g.cs
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\PersonalPage.g.cs
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\AutorizationPage.g.cs
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\ClientPage.g.cs
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\MainPage.g.cs
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ManagerPages\ManagerPage.g.cs
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\RegistrationPage.g.cs
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\Window1.g.cs
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\App.g.cs
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ_Content.g.cs
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ_MarkupCompile.cache
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ_MarkupCompile.lref
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\App.baml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\AdminPages\AdminPage.baml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\PersonalPage.baml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\AutorizationPage.baml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\ClientPage.baml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\MainPage.baml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ManagerPages\ManagerPage.baml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\RegistrationPage.baml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\Window1.baml
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.g.resources
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая_ПИТПМ.Properties.Resources.resources
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.csproj.GenerateResource.cache
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.csproj.CoreCompileInputs.cache
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.csproj.CopyComplete
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.exe
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.pdb
+C:\Users\Bulat\Desktop\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.csprojAssemblyReference.cache
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\Курсовая ПИТПМ.exe.config
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\Курсовая ПИТПМ.exe
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\Курсовая ПИТПМ.pdb
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\EntityFramework.dll
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\EntityFramework.xml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\AdminPages\AdminPage.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\MoviePage.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\PersonalPage.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\SubscriptionPage.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ManagerPages\RedactMoviePage.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\AutorizationPage.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\ClientPage.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\MainPage.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ManagerPages\ManagerPage.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\RegistrationPage.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\App.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ_Content.g.cs
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ_MarkupCompile.cache
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ_MarkupCompile.lref
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\App.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\AdminPages\AdminPage.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\MoviePage.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\PersonalPage.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\SubscriptionPage.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ManagerPages\RedactMoviePage.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\AutorizationPage.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ClientPages\ClientPage.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\MainPage.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\ManagerPages\ManagerPage.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\StartingPages\RegistrationPage.baml
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.g.resources
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая_ПИТПМ.Properties.Resources.resources
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.csproj.GenerateResource.cache
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.csproj.CoreCompileInputs.cache
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.csproj.CopyComplete
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.exe
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.pdb
+C:\Users\anluko\source\repos\Курсовая ПИТПМ\Курсовая ПИТПМ\obj\Debug\Курсовая ПИТПМ.csprojAssemblyReference.cache
